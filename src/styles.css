@@ -1,1 +1,41 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+h3, h5 {
+  font-family: comic sans MS;
+  background-color: wheat;
+  color: darkblue;
+  border: 2px dashed teal;
+}
+
+h1 {
+  font-family: fantasy;
+  font-weight: bolder;
+  text-decoration: underline;
+  color: orange;
+  border: 2px dashed teal;
+  background-color: wheat;
+}
+
+p {
+  font-family: arial;
+  font-style: italic;
+  color: purple;
+}
+
+.container {
+  background-color: lightyellow;
+  border: 2px dashed pink;
+  padding: 1rem;
+}
+
+.navbar {
+  background-color: beige;
+  border: 2px solid lime;
+  margin-bottom: 1rem;
+  font-family: serif;
+}
+
+.card {
+  background-color: yellow;
+  border: 3px double #32a1ce;
+}
