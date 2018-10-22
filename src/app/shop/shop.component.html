@@ -1,7 +1,7 @@
 <h3>Here you can shop for ethically-sourced files and vinyls.</h3>
 <p>Please note, we do not carry Radiohead or Thom Yorke (sorry for the inconvenience)</p>
 
-<div *ngFor="let album of albums" (click)="goToDetailPage(album)" class="card">
+<div *ngFor="let album of albums | async" (click)="goToDetailPage(album)" class="card">
   <div class="card-body">
 
     <h3 class="card-title"><em>{{album.title}}</em> by {{album.artist}}</h3>

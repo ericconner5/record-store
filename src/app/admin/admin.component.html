@@ -1,0 +1,27 @@
+<div class="card">
+  <div class="card-body">
+    <h3 class="card-title">Add New Album to Inventory</h3>
+    <div class="card-text">
+      <div>
+        <label>Album Title:</label>
+        <br>
+        <input #newTitle>
+      </div>
+
+      <div>
+        <label>Album Artist:</label>
+        <br>
+        <input #newArtist>
+      </div>
+
+      <div>
+        <label>Album Description:</label>
+        <br>
+        <textarea #newDescription></textarea>
+      </div>
+      <button (click)="submitForm(newTitle.value, newArtist.value, newDescription.value); newTitle.value=''; newArtist.value=''; newDescription.value=''">Add</button>
+    </div>
+
+  </div>
+
+</div>
