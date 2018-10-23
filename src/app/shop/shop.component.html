@@ -1,11 +1,16 @@
-<h3>Here you can shop for ethically-sourced files and vinyls.</h3>
-<p>Please note, we do not carry Radiohead or Thom Yorke (sorry for the inconvenience)</p>
+<div *ngIf="currentRoute != '/admin'">
+  <h3>Here you can shop for ethically-sourced files and vinyls.</h3>
+  <p>Please note, we do not carry Radiohead or Thom Yorke (sorry for the inconvenience)</p>
+</div>
 
-<div *ngFor="let album of albums | async" (click)="goToDetailPage(album)" class="card">
+<div *ngFor="let album of albums | async" class="card">
   <div class="card-body">
 
-    <h3 class="card-title"><em>{{album.title}}</em> by {{album.artist}}</h3>
-    <p class="card-text">{{album.description}}</p>
+    <h3 class="card-title" (click)="goToDetailPage(album)"><em>{{album.title}}</em> by {{album.artist}}</h3>
+    <div *ngIf="currentRoute === '/admin'"> <!--this line makes the next 3 lines available only in admin view-->
+      <p class="card-text">{{album.description}}</p>
+      <hr>
+      <app-edit-album [selectedAlbum]="album"></app-edit-album>
 
+    </div>
   </div>
-</div>
