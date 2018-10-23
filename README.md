@@ -32,7 +32,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
   - it contains everything inside the script tags from firebase in your dashboard
   - see below:
 ```
-export const firebaseConfig = {
+export const masterFirebaseConfig = {
   apiKey: "XXXXX",
   authDomain: "XXXXX.firebaseapp.com",
   databaseURL: "https://XXXXX.firebaseio.com",
@@ -40,5 +40,4 @@ export const firebaseConfig = {
   storageBucket: "XXXXX.appspot.com",
   messagingSenderId: "XXXXX"
 };
-firebase.initializeApp(firebaseConfig);
 ```
