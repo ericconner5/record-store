@@ -88,8 +88,12 @@ button:hover {
   border-radius: 25%;
   background: linear-gradient(to right, yellow, lightpink, red, pink, orange);
   border: 3px double #32a1ce;
-  box-shadow: -15px -15px 10px fuchsia;
+  box-shadow: -15px -15px 10px rgba(255, 0, 128, 0.8);
+  transition: box-shadow 10s linear;
+}
 
+.card:hover {
+  box-shadow: -800px -1000px 20px royalblue;
 }
 
 .footer {
